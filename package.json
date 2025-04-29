@@ -1,0 +1,24 @@
+{
+  "name": "message-board",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dfitch96/Message-Board.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dfitch96/Message-Board/issues"
+  },
+  "homepage": "https://github.com/dfitch96/Message-Board#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "express-async-handler": "^1.2.0"
+  }
+}
