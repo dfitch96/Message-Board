@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/dfitch96/Message-Board#readme",
   "dependencies": {
+    "ejs": "^3.1.10",
     "express": "^5.1.0",
     "express-async-handler": "^1.2.0"
   }
