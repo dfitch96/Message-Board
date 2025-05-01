@@ -51,19 +51,20 @@ a{
   align-self: center;
 }
 
-.details-button{
-  align-self: start;
+
+.details-button,
+.message-form button{
   border: var(--main-border);
   padding: 5px;
   transition: background-color 150ms ease-in-out;
-  
+}
+
+.details-button{
+  align-self: start;
 }
 
 .message-form button{
   background-color: white;
-  border: var(--main-border);
-  padding: 5px;
-  transition: background-color 150ms ease-in-out;
 }
 
 .details-button:hover,
