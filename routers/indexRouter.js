@@ -1,11 +1,12 @@
 
 const { Router } = require("express");
-const { getMessages } = require("../controllers/indexController");
+const { getMessages, getMessage } = require("../controllers/indexController");
 
 const indexRouter = Router();
 
 
 indexRouter.get("/", getMessages);
+indexRouter.get("/details/:id", getMessage);
 
 
 
