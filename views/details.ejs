@@ -11,9 +11,9 @@
   <%- include("link", { linkedText: linkText, route: route}) %>
   <div class="details-container">
     <div class="details">
-      <h2><%= message.user %></h2>
-      <p><%= message.text %></p>
-      <b><%= message.date %></b>
+      <h2><%= message.username %></h2>
+      <p><%= message.message %></p>
+      <b><%= message.created_at %></b>
       <a class="details-button" href="/">Back</a>
     </div>
   </div>

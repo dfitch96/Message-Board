@@ -12,9 +12,9 @@
   <main class="grid-container">
     <% for (let i = 0; i < messages.length; i++) { %>
       <div class="grid-item">
-        <h2><%= messages[i].user %></h2>
-        <p><%= messages[i].text%></p>
-        <a class="details-button" href="/details/<%= i %>">Message Details</a>
+        <h2><%= messages[i].username %></h2>
+        <p><%= messages[i].message%></p>
+        <a class="details-button" href="/details/<%= messages[i].id %>">Message Details</a>
       </div>
       <% } %>
   </main>
