@@ -19,4 +19,16 @@ const getMessage = asyncHandler(async (req, res) => {
 
 
 
-module.exports = { getMessages, getMessage };
+const addMessage = asyncHandler(async (req, res) => {
+  await db.addMessage(req.body);
+  res.redirect("/");
+});
+
+
+
+
+module.exports = { 
+  getMessages, 
+  getMessage, 
+  addMessage 
+};

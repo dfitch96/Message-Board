@@ -5,13 +5,11 @@ const app = express();
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
 
-const { indexRouter } = require("./routers/indexRouter");
-const { newRouter } = require("./routers/newRouter");
+const { messageRouter } = require("./routers/messageRouter");
 
 app.use(express.static(assetsPath));
 app.use(express.urlencoded({ extended: true} ));
-app.use("/", indexRouter);
-app.use("/new", newRouter);
+app.use("/", messageRouter);
 
 
 const PORT = 3000;
