@@ -17,7 +17,7 @@ const messages = [
 ];
 
 const client = new Client({
-  connectionString: `postgresql://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_DATABASE}`,
+  connectionString: process.env.DB_URL,
 });
 
 
