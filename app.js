@@ -1,5 +1,6 @@
 const express = require("express");
 const path = require("node:path");
+const { populatedb } = require("./db/populatedb");
 const assetsPath = path.join(__dirname, "public");
 require("dotenv").config();
 const app = express();
@@ -19,6 +20,7 @@ app.use((err, req, res, next) => {
 });
 
 
+populatedb();
 const PORT = process.env.PORT;
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);

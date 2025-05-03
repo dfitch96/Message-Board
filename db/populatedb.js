@@ -19,7 +19,7 @@ const client = new Client({
 });
 
 
-async function main(){
+async function populatedb(){
 
   console.log("seeding...");
 
@@ -35,29 +35,31 @@ async function main(){
         created_at TIMESTAMP
       );
     `);
-    console.log("message table created");
+    
 
-    const insertQuery = `
+    if(process.env.ENV === "dev"){
+      const insertQuery = `
       INSERT INTO messages (username, message, created_at)
       VALUES  ($1, $2, $3)`;
-
-
     
-    for(const message of messages) {
-      await client.query(insertQuery, [message.user, message.text, message.date]);
+      for(const message of messages) {
+        await client.query(insertQuery, [message.user, message.text, message.date]);
+        console.log("message inserted");
+      }
     }
-   
     
-    console.log("message inserted");
+   
+    console.log("seeding successful");
+    
 
   } catch(err) {
     console.log(err);
   } finally {
+    
     await client.end();
   }
 
 }
 
-
-main();
+module.exports = { populatedb };
 
