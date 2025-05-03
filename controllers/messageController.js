@@ -1,5 +1,5 @@
 const asyncHandler = require('express-async-handler');
-const db = require("../model/messages");
+const db = require("../db/messages");
 const CustomNotFoundError = require("../errors/CustomNotFoundError");
 
 const getMessages = asyncHandler(async (req, res) => {

@@ -18,8 +18,10 @@
   },
   "homepage": "https://github.com/dfitch96/Message-Board#readme",
   "dependencies": {
+    "dotenv": "^16.5.0",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
-    "express-async-handler": "^1.2.0"
+    "express-async-handler": "^1.2.0",
+    "pg": "^8.15.6"
   }
 }

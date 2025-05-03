@@ -14,9 +14,9 @@
       <fieldset>
         <legend>Add Message</legend>
         <label for="user">User:</label>
-        <input type="text" id="user" name="user" required>
+        <input type="text" id="user" name="user" minlength=2 maxlength="25" required>
         <label for="text">Message:</label>
-        <textarea id="text" name="text" required></textarea>
+        <textarea id="text" name="text" minlength=2 maxlength="255" required></textarea>
       </fieldset>
     </form>
     <button type="submit" form="post-form">Submit</button>
