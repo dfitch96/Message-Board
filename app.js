@@ -1,6 +1,7 @@
 const express = require("express");
 const path = require("node:path");
 const assetsPath = path.join(__dirname, "public");
+require("dotenv").config();
 const app = express();
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
@@ -18,7 +19,7 @@ app.use((err, req, res, next) => {
 });
 
 
-const PORT = 3000;
+const PORT = process.env.PORT;
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);
 });
