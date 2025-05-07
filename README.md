@@ -8,7 +8,7 @@ A simple interactive web app built with Express and EJS that lets users view and
 - Messages display the author, content, and time posted
 - Basic routing with GET and POST requests
 - Message detail view for each post
-- 
+  
 ## Tech Stack
 Node.js
 Express.js
