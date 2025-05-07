@@ -15,4 +15,4 @@ Express.js
 EJS (Embedded JavaScript Templates)
 
 ## Demo
-[Link]([https://dfitch96.github.io/Battleship/](https://message-board-production-1a0a.up.railway.app/))
+[Link](https://message-board-production-1a0a.up.railway.app/)
