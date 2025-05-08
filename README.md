@@ -14,5 +14,4 @@ A simple interactive web app built with Express and EJS that lets users view and
 - Express.js
 - EJS (Embedded JavaScript Templates)
 
-## Demo
-[Link](https://message-board-production-1a0a.up.railway.app/)
+[Live Demo](https://message-board-production-1a0a.up.railway.app/)
