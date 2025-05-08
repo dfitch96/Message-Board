@@ -1,6 +1,8 @@
 # Mini Message-Board
 A simple interactive web app built with Express and EJS that lets users view and post messages.
 
+[Live Demo](https://message-board-production-1a0a.up.railway.app/)
+
 ## Features
 - Hosted on Railway and uses PostgreSQL for message storage
 - View all messages on the main page (/)
@@ -14,4 +16,4 @@ A simple interactive web app built with Express and EJS that lets users view and
 - Express.js
 - EJS (Embedded JavaScript Templates)
 
-[Live Demo](https://message-board-production-1a0a.up.railway.app/)
+
